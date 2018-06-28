@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="list-group">
+      <div class="logo">
+          logo
+      </div>
+
+      <div class="board">
+          <div class="leftSide">
+              image
+              <div class="floatWindow"></div>
+          </div>
+
+
+
+          <div class="rightSide">
+
+
+
+
+              <div class="comment">
+                  <h6>Leave a comment</h6>
+                  <button type="button" (click)="collapseFunction()" class="btn btn-light">collapse</button>
+                  <div [@collapseAnimation]='state' class="commentDetails">
+                      <div class="messageInfo">sdfsd fsdsdfsdfsd fsdsdfsdfsd fsddfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfs</div>
+                      <div class="messageType">sdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsddfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsd</div>
+                  </div>
+              </div>
+
+
+
+
+
+
+              <div class="group">
+                  Group
+                  <div class="groupInfo"></div>
+                  <div class="groupInvite"></div>
+              </div>
+
+              <div class="info">
+                  Information
+                  <div class="infoDetails"></div>
+              </div>
+
+
+          </div>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <!--<a class="list-group-item" *ngFor="let problem of problems" [routerLink]="['/problems', problem.id]">-->
+      <!--<span class="{{'pull-left label difficulty diff-' + problem.difficulty.toLocaleLowerCase()}}">{{problem.difficulty}}</span>-->
+      <!--<strong class="title">{{problem.id}}. {{problem.name}}</strong>-->
+      <!--</a>-->
+
+
+
+  </div>
+
+</div>

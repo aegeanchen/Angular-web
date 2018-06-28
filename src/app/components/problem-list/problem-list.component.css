@@ -1,0 +1,136 @@
+.logo {
+    position: relative;
+    /*top: 65px; left: 65px;*/
+    background-color: #71c1b3;
+    height: 50px; width:100%;
+}
+
+.leftSide {
+    position: relative;
+    background-color: aliceblue;
+    float: left;
+    height: 700px; width: 80%;
+}
+
+.floatWindow {
+    margin: 30px;
+    background-color: #f1f8f6;
+    border: 1px solid gray;
+    opacity: 0.6;
+    height: 150px; width: 300px;
+
+}
+
+
+.rightSide {
+    position: relative;
+    background-color: #f1f8f6;
+    width:20%; height: 700px;
+    float: right;
+    overflow: scroll;
+
+
+}
+
+
+.comment {
+    position: relative;
+    background-color: #f1f8f6;
+    border: 1px solid gray;
+    margin: 5px;
+    height: 300px;
+    opacity: 0.6;
+
+
+}
+
+.messageInfo {
+    margin: 10px;
+    background-color: #f1f8f6;
+    border: 1px solid gray;
+    opacity: 0.6;
+    height: 50%;
+    overflow: scroll;
+
+}
+
+.messageType {
+    margin: 10px;
+    background-color: #f1f8f6;
+    border: 1px solid gray;
+    opacity: 0.6;
+    height: 30%;
+    overflow: scroll;
+
+}
+
+.group {
+    position: relative;
+    background-color: #f1f8f6;
+    border: 1px solid gray;
+    margin: 5px;
+    height: 300px;
+    opacity: 0.6;
+
+
+}
+
+.groupInfo {
+    margin: 10px;
+    background-color: #f1f8f6;
+    border: 1px solid gray;
+    opacity: 0.6;
+    height: 50%;
+    overflow: scroll;
+
+}
+
+.groupInvite {
+    margin: 10px;
+    background-color: #f1f8f6;
+    border: 1px solid gray;
+    opacity: 0.6;
+    height: 30%;
+    overflow: scroll;
+
+}
+
+.info {
+    position: relative;
+    background-color: #f1f8f6;
+    border: 1px solid gray;
+    margin: 5px;
+    height: 300px;
+    opacity: 0.6;
+    overflow: scroll;
+}
+
+.infoDetails {
+    margin: 10px;
+    background-color: #f1f8f6;
+    border: 1px solid gray;
+    opacity: 0.6;
+    height: 80%;
+    overflow: scroll;
+
+}
+
+
+
+
+.difficulty {
+  min-width: 65px;
+  margin-right: 10px;
+}
+
+.label.difficulty {
+  padding-top: 0.6em;
+  /*color: #fbfdfa;*/
+  font-size: 12px;
+}
+
+
+
+
+
+
