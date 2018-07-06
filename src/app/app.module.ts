@@ -12,6 +12,7 @@ import { ProblemDetailComponent } from './components/problem-detail/problem-deta
 import { DataService } from './services/data.service';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,4 +32,11 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
   }],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+
+}
+
+
+
+

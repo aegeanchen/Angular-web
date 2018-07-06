@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {trigger, state, style, transition, animate, keyframes } from "@angular/animations";
+
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+    templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
     animations: [
         trigger('collapseAnimation', [
@@ -14,10 +15,33 @@ import {trigger, state, style, transition, animate, keyframes } from "@angular/a
 
     ]
 })
+
+
 export class AppComponent {
-  // title = 'app';
+
+  title = 'app';
   state: string = 'large';
   collapseFunction() {
     this.state = (this.state === 'small' ? 'large' : 'small');
   }
+  btnText: string = 'show';
+
+    msg = "";
+    nCnt: number = 0;
+    clickMe() {
+        this.nCnt = this.nCnt + 1;
+        this.msg = "Clicked: " + this.nCnt;
+    }
+
+
+
 }
+
+
+
+
+
+
+
+
+

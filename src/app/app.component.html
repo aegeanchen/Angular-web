@@ -1,70 +1,87 @@
-<!--<router-outlet></router-outlet>-->
 <div class="container">
-    <div class="list-group">
-        <div class="logo">
-            logo
+
+    <div class="logo">logo</div>
+
+    <div class="board">
+
+        <div class="leftSide">
+            <div class="floatWindow" style="list-style: none; margin: 20px;">
+                <div class="floatWindow-navbar navbar-fixed-top">
+                    <ul class="navbar navbar-nav">
+                        <li><button class="navbar-collapse" data-toggle="collapse" data-target=".floatWindowCollapse" type="reset"><img src="./icon/collaspe-icon.png" width="15"></button></li>
+                        <li class="navbar-settings" style="width: 60px;">
+                            <button class="dropdown-toggle" data-toggle="dropdown">set</button>
+                            <ul class="dropdown-menu">
+                                <li>magnification</li>
+                                <li>movement speed</li>
+                                <li>mute microphone</li>
+                            </ul>
+                        </li>
+                        <li><button class="navbar-setzero">zero</button></li>
+                        <li><button class="navbar-capture">cap</button></li>
+                    </ul>
+                </div>
+                <div class="floatWindow-container navbar-collapse floatWindowCollapse"></div>
+            </div>
         </div>
 
-        <div class="board">
-            <div class="leftSide">
-                image
-                <div class="floatWindow"></div>
+
+        <div class="rightSide">
+
+
+
+            <button (click)="clickMe()">Click</button>
+            <br/> <p><strong>{{msg}}</strong></p>
+
+            <div ng-controller="myCtrl">
+                <button ng-click="myFunc()">OK</button>
+                <p>The button has been clicked {{count}} times.</p>
+            </div>
+
+
+            <div class="comment">
+                <div class="comment-navbar navbar-inverse navbar-fixed-top">
+                    <p>comment info</p>
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="comment-container navbar-collapse navHeaderCollapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <div [@collapseAnimation]='state' class="commentDetails">
+                            <div class="messageInfo">sdfsd fsdsdfsdfsd fsdsdfsdfsd fsddfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfs</div>
+                            <div class="messageType">sdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsddfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsd</div>
+                        </div>
+                    </ul>
+                </div>
             </div>
 
 
 
-            <div class="rightSide">
-
-
-
-
-                <div class="comment">
-                    <h6>Leave a comment</h6>
-                    <button type="button" (click)="collapseFunction()" class="btn btn-light">collapse</button>
-                    <div [@collapseAnimation]='state' class="commentDetails">
-                        <div class="messageInfo">sdfsd fsdsdfsdfsd fsdsdfsdfsd fsddfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfs</div>
-                        <div class="messageType">sdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsddfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsd</div>
-                    </div>
-                </div>
-
-
-
-
-
-
-                <div class="group">
-                    Group
-                    <div class="groupInfo"></div>
-                    <div class="groupInvite"></div>
-                </div>
-
-                <div class="info">
-                    Information
-                    <div class="infoDetails"></div>
-                </div>
-
-
+            <div class="group">
+                Group
+                <div class="groupInfo">dfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsddfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsd
+                    dfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsddfsdfsd fsdsdfsdfsd fsdsdfsdfsd fsd</div>
+                <div class="groupInvite"></div>
             </div>
 
+
+
+            <div class="info">
+                Information
+                <div class="infoDetails"></div>
+            </div>
+
+
+
         </div>
-
-
-
-
-
-
-
-
-
-
-        <!--<a class="list-group-item" *ngFor="let problem of problems" [routerLink]="['/problems', problem.id]">-->
-        <!--<span class="{{'pull-left label difficulty diff-' + problem.difficulty.toLocaleLowerCase()}}">{{problem.difficulty}}</span>-->
-        <!--<strong class="title">{{problem.id}}. {{problem.name}}</strong>-->
-        <!--</a>-->
-
-
 
     </div>
 
 </div>
+
+
+
 
